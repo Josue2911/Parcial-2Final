@@ -1,0 +1,410 @@
+body, nav, header {
+    margin:0;
+    padding: 0;
+
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.76);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: absolute;
+    font-weight: bold;
+    
+}
+
+.logo{
+    width: 120px;
+    margin-left: 100px;
+    mix-blend-mode:darken;
+   
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ul {
+    list-style: none;  
+}
+
+.idioma{
+    width: 30px;
+    margin-right: 80px;
+    margin-left: 40px ;
+    border-radius: 50%;
+    border: 0.5px solid;
+    height: 27px;
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+
+ul, li{
+    font-size: 19px;
+    margin-top: 15px;
+    
+}
+.menu-item{
+    padding: 5px; 
+    align-items: uppercase;
+    margin-left: 60px;
+    color: black;
+}
+
+.menu-item span:hover{
+    color: #f39f5a;
+}
+
+
+/*Fin del nav*/
+
+.pabanner{
+    background-image: url(imagenes/banner2.jpg);
+    height: 580px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(83%);
+}
+
+.letras{
+    position: absolute;
+    top: 55%;
+   right: 50px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    line-height: 10px;
+    color: white;
+    font-weight: bold;
+}
+.letras h2{
+    font-size: 50px;
+}
+
+.letras h1{
+    font-size: 67px;
+    text-shadow: 15px 10px 12px black;
+}
+
+.letras p {
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+   letter-spacing: 8px;
+}
+
+
+
+/* SIMULACION DE BOTONES EN EL BANNER*/
+
+.contenido{
+    display: absolute;
+}
+
+.opciones{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left: 650px;
+    margin-top: 370px;
+    transform: translate(-50%, -50%);
+    
+}
+ul, li, a{
+    text-decoration:none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#primera{
+    background-color: black;
+    padding: 12px;
+    border-radius: 30px;
+    box-shadow: 5px 8px;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+}
+#segundo{
+    background-color: orangered;
+    box-shadow: 5px 8px;
+    padding: 12px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#primera:hover{
+    background-color: #f39f5a;
+}
+
+#segundo:hover{
+    background-color: #f39f5a;
+}
+
+
+
+
+/*Haciendo las animaciones*/
+.contenedor-contenido {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px;
+    padding-right: 100px;
+    background-color: rgb(233, 225, 225);
+}
+
+.animacion {
+    width: 320px;
+    height: 400px;
+    box-shadow: 20px 20px 0 0 rgba(0,0,0,0.20);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 2;
+        scale: 100%;
+    }
+
+}
+
+img, h2 {
+
+    view-timeline-name: --imagenes;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagenes;
+    animation-name: show;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+}
+
+
+#titulo-naranja {
+
+    display: flex;
+    background-color: rgba(235, 178, 54, 0.959);
+    background-position: center;
+    background-size:auto;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.texto {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-left: 50px;
+}
+
+#texto-disfruta {
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.descubrir {
+    display: flex;
+    padding: 50px;
+    
+}
+
+#mujer-baile {
+
+    height: 500px;
+    width: 500px;
+    border-radius: 100px ;
+    padding: 50px;
+  
+}
+
+#texto-mujer-baile {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+
+}
+
+#titulo-baile {
+    color:  rgba(235, 178, 54, 0.959);
+    font-size: 40px;
+}
+
+.descripcion-baile {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+i {
+    color: green;
+    font-size: 500px;
+    font-weight: bold;
+}
+
+.contenedor-c {
+    background-color: rgb(233, 225, 225) ;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(3);
+    grid-template-areas:
+    "a b c"
+    "d e f";
+}
+
+.titulo-cajitas{
+    color:  rgba(235, 178, 54, 0.959);
+    font-size: 30px;
+}
+
+.imagenes-cajitas {
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+} 
+
+.cajitas {
+     border-radius: 10px;
+     margin: 10px;
+     text-align: center;
+     font-size: 20px;
+     height: 300px;
+     width: 300px;
+     background-color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    color:  rgba(235, 178, 54, 0.959);
+    font-size: 30px;
+    height: 100px;
+}
+
+/* Footer*/
+footer{
+    background-color: #f39f5ad5;
+    padding-top: 30px;
+    width:100% ;
+    height: 650px;
+    
+}
+
+
+.formulario{
+    position: relative;
+    left: 800px;
+    width: 350px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 0.5px;
+    margin-left:200px;
+    margin-bottom: 0;
+    border-radius:5%;
+    text-align: center;
+    box-shadow: 8px 9px rgba(63, 63, 63, 0.61) ;
+}
+
+input, textarea{
+    padding: 4px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(128, 128, 128, 0.39);
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0);
+    color: black
+}
+form, label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+form, h1{
+    text-decoration: underline wavy orange;
+}
+
+.click{
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #f39f5a;
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.801);
+border: 0;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.mapa{
+    position: absolute;
+    z-index: 1;
+    margin:50px;
+    margin-left: 300px;
+    margin-top: 0;
+    border-radius: 20px;
+    box-shadow: 10px 12px rgba(63, 63, 63, 0.61) ;
+}
+
+#copy {
+    
+    padding-top: 120px;
+    padding-left: 35%;
+    background-color: rgb(233, 225, 225);
+}
+/*Fin del footer*/
+
+
+@media (max-width:1275px){
+    html{
+        height: 100px;
+        width:100px;
+    }
+    footer{
+        width:3000px;
+        height:900px;
+        padding:5px;
+    }
+}
+@media (min-width:300px) and (max-width:400px){
+    html{
+        display:block;
+        width: 1275px;
+        height: 100%;
+    }
+    footer{
+        width:1275px;
+        height:690px;
+        padding:5px;
+    }
+    .mapa{
+        padding-bottom: 50%;
+    }
+    .formulario{
+        height: 600px;
+        padding-bottom: 50px;
+        flex-direction: column;
+
+    }
+    #copy{
+        text-align: center;
+        padding: 100px;
+        height: 50px;
+        padding-top:5px;
+        padding-bottom: 50px;
+    }
+}
